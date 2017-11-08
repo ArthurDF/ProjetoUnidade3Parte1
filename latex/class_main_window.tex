@@ -1,0 +1,72 @@
+\hypertarget{class_main_window}{}\section{Main\+Window Class Reference}
+\label{class_main_window}\index{Main\+Window@{Main\+Window}}
+Inheritance diagram for Main\+Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_main_window}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_main_window_afdfeb13ec363b0eb8ecacaf0aa13b605}\label{class_main_window_afdfeb13ec363b0eb8ecacaf0aa13b605}} 
+void \hyperlink{class_main_window_afdfeb13ec363b0eb8ecacaf0aa13b605}{put\+Data} ()
+\begin{DoxyCompactList}\small\item\em put\+Data realiza o envio de dados para o servidor e mostra no browser a data, hora e numero de dados enviados a data e hora estao no formato yyyy-\/\+M\+M-\/dd\+Thh\+:mm\+:ss o numero minimo e maximo de dados é definido pelo usuario nos sliders M\+IN e M\+AX, respectivamente \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_ac5b669957c442b6eb68573dacfce33e1}\label{class_main_window_ac5b669957c442b6eb68573dacfce33e1}} 
+void \hyperlink{class_main_window_ac5b669957c442b6eb68573dacfce33e1}{tcp\+Connect} ()
+\begin{DoxyCompactList}\small\item\em tcp\+Connect faz a conexão com o servidor T\+CP com o click do botao Connect usando o IP digitado pelo usuario no editor de texto \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_a4d22c4c7afc7ba0a2fa4c70515c85dda}\label{class_main_window_a4d22c4c7afc7ba0a2fa4c70515c85dda}} 
+void \hyperlink{class_main_window_a4d22c4c7afc7ba0a2fa4c70515c85dda}{tcp\+Disconnect} ()
+\begin{DoxyCompactList}\small\item\em tcp\+Disconnect desconecta o IP ao servidor T\+CP com o click do botao Disconnect \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_a5edcbc314e782645cdf4db101eeb247d}\label{class_main_window_a5edcbc314e782645cdf4db101eeb247d}} 
+void \hyperlink{class_main_window_a5edcbc314e782645cdf4db101eeb247d}{start} ()
+\begin{DoxyCompactList}\small\item\em start dá inicio ao envio de dados com o click do botao Start dando inicio ao timer a frequencia do timer(quantas vezes os dados são enviados por segundo) é definida pelo usuario no slider Timing \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_a939e90ddfe07d74be87b351ca2171fb0}\label{class_main_window_a939e90ddfe07d74be87b351ca2171fb0}} 
+void \hyperlink{class_main_window_a939e90ddfe07d74be87b351ca2171fb0}{stop} ()
+\begin{DoxyCompactList}\small\item\em stop termina o envio de dados com o click do botao Stop finalizando o timer \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_a8833996e545dd142223a4b7372bfba6e}\label{class_main_window_a8833996e545dd142223a4b7372bfba6e}} 
+void \hyperlink{class_main_window_a8833996e545dd142223a4b7372bfba6e}{slider\+Start} ()
+\begin{DoxyCompactList}\small\item\em slider\+Start atualiza frequencia de envio de dados de acordo com a atualização do slider do Timming \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}\label{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}} 
+{\bfseries Main\+Window} (Q\+Widget $\ast$parent=0)
+\item 
+void \hyperlink{class_main_window_a9d08a694a5f9c532225754381b8011ea}{timer\+Event} (Q\+Timer\+Event $\ast$e)
+\begin{DoxyCompactList}\small\item\em timer\+Event temporizador que faz a chamada da função \hyperlink{class_main_window_afdfeb13ec363b0eb8ecacaf0aa13b605}{put\+Data()} a cada time(definido pelo usuario) segundos \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 13 of file mainwindow.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_main_window_a9d08a694a5f9c532225754381b8011ea}\label{class_main_window_a9d08a694a5f9c532225754381b8011ea}} 
+\index{Main\+Window@{Main\+Window}!timer\+Event@{timer\+Event}}
+\index{timer\+Event@{timer\+Event}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{timer\+Event()}{timerEvent()}}
+{\footnotesize\ttfamily void Main\+Window\+::timer\+Event (\begin{DoxyParamCaption}\item[{Q\+Timer\+Event $\ast$}]{e }\end{DoxyParamCaption})}
+
+
+
+timer\+Event temporizador que faz a chamada da função \hyperlink{class_main_window_afdfeb13ec363b0eb8ecacaf0aa13b605}{put\+Data()} a cada time(definido pelo usuario) segundos 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & evento Q\+Timer \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 47 of file mainwindow.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Qt\+Tcp\+Client\+Producer/mainwindow.\+h\item 
+Qt\+Tcp\+Client\+Producer/mainwindow.\+cpp\end{DoxyCompactItemize}
